@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/sdk.ts"],"sourcesContent":["import { init } from \"@myproject/test\"\r\n\r\nexport function userInit() {\r\n    init()\r\n}"],"mappings":"4ZAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,cAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAAI,EAAqB,2BAEd,SAASF,GAAW,IACvB,QAAK,CACT","names":["sdk_exports","__export","userInit","__toCommonJS","import_test"]}

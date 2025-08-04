@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/index.ts","../../src/sdk.ts"],"sourcesContent":["export * from './sdk'","export function init() {\r\n    console.log('init')\r\n}"],"mappings":"4ZAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,UAAAE,IAAA,eAAAC,EAAAH,GCAO,SAASI,GAAO,CACnB,QAAQ,IAAI,MAAM,CACtB","names":["index_exports","__export","init","__toCommonJS","init"]}

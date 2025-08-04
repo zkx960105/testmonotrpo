@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/sdk.ts"],"sourcesContent":["import { init } from \"@myproject/test\"\r\n\r\nexport function userInit() {\r\n    init()\r\n}"],"mappings":"AAAA,OAAS,QAAAA,MAAY,kBAEd,SAASC,GAAW,CACvBD,EAAK,CACT","names":["init","userInit"]}
