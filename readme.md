@@ -2,14 +2,14 @@
 # 按以下方式使用
 # step1
   monorepo-root/
-    &emsp;&emsp;└── apps/
-    &emsp;&emsp;&emsp;&emsp;    └── weapp/                  # 小程序项目目录
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ├── miniprogram/        # 必须命名为 miniprogram
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        │   ├── app.js
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        │   └── ...             # 其他小程序文件
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ├── node_modules/       # pnpm 安装后生成的依赖
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ├── package.json        # 小程序专属 package.json
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        └── project.config.json # 项目配置文件
+    &emsp;&emsp;└── apps/  
+    &emsp;&emsp;&emsp;&emsp;    └── weapp/                  # 小程序项目目录  
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ├── miniprogram/        # 必须命名为 miniprogram  
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        │   ├── app.js  
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        │   └── ...             # 其他小程序文件  
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ├── node_modules/       # pnpm 安装后生成的依赖  
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ├── package.json        # 小程序专属 package.json  
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        └── project.config.json # 项目配置文件  
   
 # step2
  Configure the project.config.json file
