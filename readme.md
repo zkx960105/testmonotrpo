@@ -2,14 +2,14 @@
 # 按以下方式使用
 # step1
   monorepo-root/  
-    └── apps/  
-        └── weapp/                  # 小程序项目目录  
-            ├── miniprogram/        # 必须命名为 miniprogram  
-            │   ├── app.js  
-            │   └── ...             # 其他小程序文件  
-            ├── node_modules/       # pnpm 安装后生成的依赖  
-            ├── package.json        # 小程序专属 package.json  
-            └── project.config.json # 项目配置文件  
+      └── apps/  
+          └── weapp/                  # 小程序项目目录  
+              ├── miniprogram/        # 必须命名为 miniprogram  
+              │   ├── app.js  
+              │   └── ...             # 其他小程序文件  
+              ├── node_modules/       # pnpm 安装后生成的依赖  
+              ├── package.json        # 小程序专属 package.json  
+              └── project.config.json # 项目配置文件  
   
 # step2
  Configure the project.config.json file
