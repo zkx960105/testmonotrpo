@@ -1,0 +1,2 @@
+function u(t){let n=[],s=t.defaultIntegrations()||[],l=t.plugins;l&&Array.isArray(l)?n=[...s,...l]:n=[...s],console.log("totalPlugins",n[0]);let a=[];return n.length>0&&n.forEach(e=>{let r=e();a.push(r)}),a}export{u as a};
+//# sourceMappingURL=chunk-4YFW4633.mjs.map

@@ -1,19 +1,27 @@
 // app.ts
+const { init } = require("@myproject/user/index")
 App<IAppOption>({
-  globalData: {},
+  globalData: {
+    zkxmonitor: null
+  },
   onLaunch() {
     // 展示本地存储能力
     // 在 app.js 中添加验证代码
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    // const logs = wx.getStorageSync('logs') || []
+    // logs.unshift(Date.now())
+    // wx.setStorageSync('logs', logs)
 
     // 登录
-    wx.login({
-      success: res => {
-        console.log(res.code)
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      },
+    // wx.login({
+    //   success: res => {
+    //     console.log(res.code)
+    //     // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    //   },
+    // })
+    this.globalData.zkxmonitor = init({
+      dsn: 'xxxxxx',
+      plugins: [],
+      defaultIntegrations: true
     })
   },
 })

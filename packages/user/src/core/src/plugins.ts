@@ -4,7 +4,7 @@ export function pluginHandler(options: any) {
     // if(options.defaultIntegrations) {
 
     // }
-    const defaultIntegrations = options.defaultIntegrations || []
+    const defaultIntegrations = options.defaultIntegrations() || []
     // const userPlugins = [ ...plugins.defaultIntegrations,...options.plugins]
     const userPlugins = options.plugins
     if(userPlugins && Array.isArray(userPlugins)) {
@@ -13,11 +13,16 @@ export function pluginHandler(options: any) {
         totalPlugins = [...defaultIntegrations]
     }
 
+    console.log('totalPlugins',totalPlugins[0])
+
+    const resultPlugins: any[] = []
+    //先这样处理，直接执行
     if(totalPlugins.length > 0) {
         totalPlugins.forEach(fn => {
-            fn()
+            const callBack = fn()
+            resultPlugins.push(callBack)
         })
     }
 
-    return totalPlugins
+    return resultPlugins
 }

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/global.ts"],"sourcesContent":["type eventHandler = {\r\n    \"unhandledrejection\": any[],\r\n    \"error\": any[]\r\n}\r\n\r\nexport const eventHandler: eventHandler = {\r\n    'error': [],\r\n    'unhandledrejection': []\r\n}"],"mappings":"AAKO,IAAMA,EAA6B,CACtC,MAAS,CAAC,EACV,mBAAsB,CAAC,CAC3B","names":["eventHandler"]}

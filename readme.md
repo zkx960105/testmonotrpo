@@ -1,7 +1,7 @@
 # how to use? Use it in the following way
 # 按以下方式使用
 # step1
-  monorepo-root/
+  monorepo-root/  
     &emsp;&emsp;└── apps/  
     &emsp;&emsp;&emsp;&emsp;    └── weapp/                  # 小程序项目目录  
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ├── miniprogram/        # 必须命名为 miniprogram  

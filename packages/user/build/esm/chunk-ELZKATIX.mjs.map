@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/client.ts"],"sourcesContent":["import { Client } from \"./core/src/index\"\r\n\r\nexport class BrowserClient extends Client {\r\n    public constructor(options) {\r\n        super(options)\r\n    }\r\n}"],"mappings":"yCAEO,IAAMA,EAAN,cAA4BC,CAAO,CAC/B,YAAYC,EAAS,CACxB,MAAMA,CAAO,CACjB,CACJ","names":["BrowserClient","Client","options"]}

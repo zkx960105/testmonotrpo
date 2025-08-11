@@ -18,7 +18,7 @@ export function init(options: ClientOptions) {
 }
 
 /**
- * import { init } from "@zkx/monitor-wechat"
+ * const { init } require ("@xxx/index")
  * init({
  *  dsn: 'xxxxxx',
  *  plugins?: [],

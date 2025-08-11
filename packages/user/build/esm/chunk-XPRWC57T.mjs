@@ -1,0 +1,2 @@
+import{b as e,c as n}from"./chunk-HC7DCVXI.mjs";function C(i,o){if(e()!==void 0)throw new Error("client has been instantiated");{let t=new i(o);return n(t),t.init(),t}}function p(){console.log("test")}export{C as a,p as b};
+//# sourceMappingURL=chunk-XPRWC57T.mjs.map

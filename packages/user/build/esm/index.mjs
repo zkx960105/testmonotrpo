@@ -1,2 +1,2 @@
-import{a as o}from"./chunk-C2OJW74X.mjs";export{o as userInit};
+import{a as r}from"./chunk-ELZKATIX.mjs";import{b as e}from"./chunk-55RHIXXH.mjs";import"./chunk-ISBSTKQV.mjs";import{a as o}from"./chunk-E7NJPEGH.mjs";import"./chunk-PZGLI67Q.mjs";import{a as n}from"./chunk-XPRWC57T.mjs";import{a as i}from"./chunk-4YFW4633.mjs";import"./chunk-V5NSX7SI.mjs";import"./chunk-HC7DCVXI.mjs";function f(t){console.log("init");let l={...t,plugins:i({defaultIntegrations:t.defaultIntegrations?e:[],plugins:t.plugins||[]}),transport:t.transport||o};return n(r,l)}export{f as init};
 //# sourceMappingURL=index.mjs.map

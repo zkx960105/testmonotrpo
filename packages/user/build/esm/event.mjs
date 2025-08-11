@@ -1,0 +1,2 @@
+import{b as n}from"./chunk-HC7DCVXI.mjs";function l(){return function(t){let e=n();if(e===void 0)throw new Error("client is not exist");e.colletEvent==null?e.colletEvent=g(t):e.colletEvent(t)}}function g(t){var c;let e=n(),r=getCurrentPages(),s={page:((c=r[r.length-1])==null?void 0:c.route)||t.page||"",type:t.type||"click",eventid:t.eventid||"",message:t.message||""};e==null||e.triggerSend(s)}export{l as eventCollect};
+//# sourceMappingURL=event.mjs.map

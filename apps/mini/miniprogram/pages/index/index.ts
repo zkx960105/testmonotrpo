@@ -1,11 +1,11 @@
 // index.ts
 // 获取应用实例
 // import { userInfo } from "@myproject/user"
-const { userInfo } = require("@myproject/user/index")
-userInfo()
+// const { userInfo } = require("@myproject/user/index")
+// userInfo()
 const app = getApp<IAppOption>()
 const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'
-
+console.log(getCurrentPages())
 Component({
   data: {
     motto: 'Hello World',

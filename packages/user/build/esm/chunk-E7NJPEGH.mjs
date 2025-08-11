@@ -1,0 +1,2 @@
+import{a as e}from"./chunk-V5NSX7SI.mjs";function o(t){function r(n){let a={data:n.body,method:"POST",...t.requestOptions};wx.request({url:t.url,...a})}return e(t,r)}export{o as a};
+//# sourceMappingURL=chunk-E7NJPEGH.mjs.map

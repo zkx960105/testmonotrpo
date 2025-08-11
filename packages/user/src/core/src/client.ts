@@ -22,7 +22,7 @@ type onUnhandledRejection = {
 
 type queue = {
     type: string,
-    message: WechatMiniprogram.OnUnhandledRejectionListenerResult | WechatMiniprogram.Error
+    message: WechatMiniprogram.OnUnhandledRejectionListenerResult | WechatMiniprogram.Error | string
 }
 
 export let currrntClient:Client | undefined = undefined
@@ -41,6 +41,7 @@ export abstract class Client {
     protected readonly _queue: queue[] = [];
     protected _time: number = 0;
     protected _flushTimer: number | null = null; //定时器
+    public colletEvent: any = null
     
     protected constructor(options: ClientOptions) {
         this._options = options
@@ -56,6 +57,10 @@ export abstract class Client {
     public init(): void {
         //handle plugin
         const { plugins } = this._options 
+        console.log("client init")
+        plugins.forEach(fn => {
+            fn(this._options)
+        })
     }
 
     public sendEvent() {
@@ -83,7 +88,7 @@ export abstract class Client {
         }
     } 
 
-    public triggerSend(event: ErrorType | onUnhandledRejection) {
+    public triggerSend(event: ErrorType | onUnhandledRejection | {type: string, message: string}) {
         //cache indexdb?
         this._queue.push(event)
         this.sendEvent()
