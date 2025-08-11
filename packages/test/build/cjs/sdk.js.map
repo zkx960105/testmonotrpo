@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/sdk.ts"],"sourcesContent":["export function init() {\r\n    console.log('init')\r\n}"],"mappings":"4ZAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,UAAAE,IAAA,eAAAC,EAAAH,GAAO,SAASE,GAAO,CACnB,QAAQ,IAAI,MAAM,CACtB","names":["sdk_exports","__export","init","__toCommonJS"]}

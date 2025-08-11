@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/sdk.ts"],"sourcesContent":["export function init() {\r\n    console.log('init')\r\n}"],"mappings":"AAAO,SAASA,GAAO,CACnB,QAAQ,IAAI,MAAM,CACtB","names":["init"]}

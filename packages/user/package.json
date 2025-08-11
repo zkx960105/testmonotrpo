@@ -13,8 +13,12 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.12.4",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
-    "@myproject/test": "workspace:*",
+    "miniprogram-api-typings": "^4.1.0",
     "tsup": "8.5.0"
   }
 }

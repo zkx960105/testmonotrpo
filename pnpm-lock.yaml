@@ -21,13 +21,21 @@ importers:
         specifier: ^7.0.4
         version: 7.0.6
 
-  packages/test: {}
+  apps/mini:
+    dependencies:
+      '@myproject/user':
+        specifier: file:../../packages/user
+        version: link:../../packages/user
+    devDependencies:
+      miniprogram-api-typings:
+        specifier: ^2.8.3-1
+        version: 2.12.0
 
   packages/user:
     dependencies:
-      '@myproject/test':
-        specifier: workspace:*
-        version: link:../test
+      miniprogram-api-typings:
+        specifier: ^4.1.0
+        version: 4.1.0
       tsup:
         specifier: 8.5.0
         version: 8.5.0(postcss@8.5.6)(typescript@5.8.3)
@@ -479,6 +487,12 @@ packages:
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
+
+  miniprogram-api-typings@2.12.0:
+    resolution: {integrity: sha512-ibvbqeslVFur0IAvTxLMvsbtvVcMo6gwvOnj0YZHV7aeDLu091VQRrETT2QuiG9P6aZWRcxeNGJChRKVPCp9VQ==}
+
+  miniprogram-api-typings@4.1.0:
+    resolution: {integrity: sha512-4RBsz27nBKyRkVGoNkRaPx24/KeJBw3zaaIlXDR8s/WBh2PbcUAc+q7wLLbp7Qsmb3bLzzUu7tqAti+B06kmjg==}
 
   mlly@1.7.4:
     resolution: {integrity: sha512-qmdSIPC4bDJXgZTCR7XosJiNKySV7O215tsPtDN9iEO/7q/76b/ijtgRu/+epFXSJhijtTCCGp3DWS549P3xKw==}
@@ -1064,6 +1078,10 @@ snapshots:
       brace-expansion: 2.0.2
 
   minipass@7.1.2: {}
+
+  miniprogram-api-typings@2.12.0: {}
+
+  miniprogram-api-typings@4.1.0: {}
 
   mlly@1.7.4:
     dependencies:

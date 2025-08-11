@@ -1,6 +1,7 @@
 {
   "name": "monorepo",
   "private": true,
+  "workspaces": ["apps/*", "packages/*"],
   "version": "0.0.0",
   "type": "module",
   "packageManager": "pnpm@10.12.4",
